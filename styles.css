@@ -1,0 +1,60 @@
+.buy-now-button {
+    color: white; /* Change the text color to white */
+    text-decoration: none; /* Remove the underline */
+    font-weight: 400;
+    font-size: 20px;
+    /* You can remove other styles to have plain white text */
+}
+
+
+/* Style for the "Add to Cart" button with plain white text */
+.add-to-cart-button {
+    background: none; /* Remove background color */
+    color: #F14A16; /* Text color */
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Alatsi;
+    border: none; /* Remove border */
+    white-space: nowrap; /* Prevent text from wrapping */
+    padding: 0; /* Remove padding */
+}
+
+
+
+
+
+.login-button,
+.submit-button {
+    background: none; /* Remove background color */
+    color: #F14A16 ; /* Text color */
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Alatsi;
+    border: none; /* Remove border */
+    white-space: nowrap; /* Prevent text from wrapping */
+    padding: 0; /* Remove padding */
+}
+
+.container {
+    background-color: #F14A16; /* Light orange background color */
+    color: black; /* Change text color to black */
+    padding: 20px; /* Add padding for spacing inside the container */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+#loginSubmitButton {
+    background-color: #4CAF50; /* Change the background color to green */
+    color: white; /* Change the text color to white */
+    padding: 10px 20px; /* Add padding for spacing inside the button */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+#loginSubmitButton:hover {
+    background-color: #45a049; /* Change the background color on hover */
+}
+
+
+

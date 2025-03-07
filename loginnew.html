@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+      
+
+       
+
+        .auth-link {
+            display: block;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .auth-link:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .submit-button {
+            background-color: #007BFF;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            border: none;
+            padding: 12px 0;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .auth-box {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .auth-box a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .auth-box a:hover {
+            text-decoration: underline;
+        }
+
+        .auth-box img {
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .popup {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="loginPopup" class="popup">
+            <h2>Log In</h2>
+            <div class="auth-box">
+                <img src="web photo libas\google.png" alt="Google Logo">
+                <a class="auth-link" href="https://your-google-login-url.com">Log in with Google</a>
+            </div>
+            <div class="auth-box">
+                <img src="web photo libas\facebook download.png" alt="Facebook Logo">
+                <a class="auth-link" href="https://your-facebook-login-url.com">Log in with Facebook</a>
+            </div>
+            <div class="divider">or</div>
+            <form action="http://localhost:3000/login" method="post">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <input type="submit" value="Log In">
+            </form>
+            
+            <div class="auth-link">New to this site? <a href="signup.html">Sign Up</a></div>
+        </div>
+    </div>
+</body>
+
+</html>

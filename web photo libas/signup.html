@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .popup {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            max-width: 90%;
+            width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .popup h2 {
+            color: #007BFF;
+            font-size: 28px;
+            margin: 0 0 20px;
+        }
+
+        .auth-link {
+            display: block;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .auth-link:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .submit-button {
+            background-color: #007BFF;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            border: none;
+            padding: 12px 0;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .auth-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .auth-box a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .auth-box a:hover {
+            text-decoration: underline;
+        }
+
+        .auth-box img {
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .popup {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup" id="signup">
+        <h2>Sign Up</h2>
+        <div class="auth-box">
+            <img src="C:\Users\USER\Downloads\7123025_logo_google_g_icon.png" alt="Google Logo">
+            <a class="auth-link" href="https://your-google-signup-url.com">Sign up with Google</a>
+        </div>
+        <div class="auth-box">
+            <img src="C:\Users\USER\Downloads\3d-square-with-facebook-logo\3D_Square_with_Facebook_Logo.jpg" alt="Facebook Logo">
+            <a class="auth-link" href="https://your-facebook-signup-url.com">Sign up with Facebook</a>
+        </div>
+        <div class="divider">or</div>
+        <form>
+            <label for="newEmail">Email:</label>
+            <input type="text" id="newEmail" name="newEmail">
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+            <button id="signupSubmitButton" class="submit-button">Sign Up</button>
+        </form>
+        <div class="auth-link">Already a member? <a href="webfigma22.html">Log In</a></div>
+    </div>
+</body>
+
+</html>
